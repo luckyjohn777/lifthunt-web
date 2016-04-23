@@ -8,4 +8,3 @@ tmp
 app/jspm_packages
 .*log
 dist
-npm
