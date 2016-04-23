@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="/dist/assets/css/styles.css"/>
+    <script src="/dist/js/bundle.js"></script>
+</head>
+<body ng-app="Lifthunt" ng-controller="MainController" layout="column">
+    <md-toolbar class="md-accent md-hue-1" layout="row" md-whiteframe="4">
+        <md-button aria-label="faq">faq</md-button>
+        <md-button aria-label="about">about</md-button>
+    </md-toolbar>
+    <md-content layout="row" flex id="main-content">
+        <div layout="row" flex ng-view></div>
+    </md-content>
+</body>
+</html>
