@@ -51,8 +51,8 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "scripts": {
-    "prestart": "npm update & bower update",
-    "start": "gulp & live-server",
+    "prestart": "npm update",
+    "start": "gulp build",
     "tests": "karma start ./test/karma.conf.js"
   }
 }
