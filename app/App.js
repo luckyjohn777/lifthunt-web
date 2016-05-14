@@ -1,6 +1,8 @@
 var app = angular.module('Lifthunt',
     [
         'ngMaterial',
+        'ngSanitize',
         'ngMdIcons',
-        'ngRoute'
-    ] );
+        'ngRoute',
+        'materialCalendar'
+    ]);

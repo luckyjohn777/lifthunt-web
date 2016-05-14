@@ -5,16 +5,23 @@
     <title>Title</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
-    <link rel="stylesheet" href="/dist/assets/css/styles.css"/>
-    <script src="/dist/js/bundle.js"></script>
+    <link rel="stylesheet" href="./assets/css/styles.css"/>
+    <script src="./js/bundle.js"></script>
 </head>
 <body ng-app="Lifthunt" ng-controller="MainController" layout="column">
-    <md-toolbar class="md-accent md-hue-1" layout="row" md-whiteframe="4">
-        <md-button aria-label="faq">faq</md-button>
-        <md-button aria-label="about">about</md-button>
+<md-toolbar class="md-accent md-hue-1" layout-align="left center" layout="row" md-whiteframe="4">
+    <md-button class="md-icon-button" aria-label="Settings" ng-click="openLeftMenu()">
+        <ng-md-icon icon="menu"></ng-md-icon>
+    </md-button>
     </md-toolbar>
-    <md-content layout="row" flex id="main-content">
-        <div layout="row" flex ng-view></div>
+<side-nav></side-nav>
+</md-sidenav>
+<md-content layout="row" flex id="main-content" class="main">
+    <div layout="row" layout-align="center" flex>
+        <md-card md-whiteframe="2" flex="75" class="base-card">
+            <div class="row" flex ng-view></div>
+        </md-card>
+    </div>
     </md-content>
 </body>
 </html>

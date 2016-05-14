@@ -1,8 +1,13 @@
 @import (inline) "../../node_modules/angular-material/angular-material.min.css";
 @import (inline) '../../node_modules/angular-material-icons/angular-material-icons.css';
+@import (inline) '../../node_modules/angular-material-calendar/dist/angular-material-calendar.min.css';
+
+.main {
+    background: linear-gradient(to left, #2BC0E4, #EAECC6);
+}
 
 .login-card {
-    background-color: #fafafa;
+    background-color: rgb(255, 255, 255);
     width: 350px;
     height: 300px;
 }
@@ -10,4 +15,21 @@
 .login-headline {
     font-weight: 200;
     text-align: center;
+}
+
+.base-card {
+    background-color: rgb(255, 255, 255);
+    margin: 100px 0;
+    border-radius: 0;
+    height: 100%;
+}
+
+.calendar {
+    height: 750px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.md-toolbar-tools h2 {
+    font-weight: 300;
 }
